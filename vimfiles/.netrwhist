@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='C:'
+let g:netrw_dirhist_2='C:/Documents and Settings'
+let g:netrw_dirhist_3='C:/Documents and Settings/works'
+let g:netrw_dirhist_4='C:/Documents and Settings/works/My Documents'
+let g:netrw_dirhist_5='C:/Documents and Settings/works/My Documents/JS‘Î‰ž'
+let g:netrw_dirhist_6='C:/Documents and Settings/works/My Documents/JS‘Î‰ž/30scripts'
