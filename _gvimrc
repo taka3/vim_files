@@ -9,29 +9,16 @@ set guioptions-=T
 set guioptions-=m
 " フォント設定
 "set guifont=M+2VM+IPAGcircleRegular:h14
-"クリップボードをWindowsと連携
-set clipboard=unnamed
-"backupを作らない
-"set nobackup
-" スワップファイルの作成は行わない
-"set noswapfile
-"モードラインの無効化
-set nomodeline
-"バックアップファイルの保存場所を設定
-set backupdir=C:\vim73\vimbackup
-"スワップファイルの保存場所を設定
-set directory=C:\vim73\vimswap
-
-" 分割した設定ファイルをすべて読み込む
-set runtimepath+=~/vimfiles/
-runtime! userautoload/*.vim
-
-"文字コード
-set encoding=shift_jis
-"改行コード
-set ff=unix
 
 "画面透明度
 "gui
 "set transparency=240
 
+" 分割した設定ファイルをすべて読み込む
+set runtimepath+=~/vimfiles/
+runtime! user_gsetting/*.vim
+
+"文字コード
+"set encoding=shift_jis
+"改行コード
+set ff=unix

@@ -1,0 +1,8 @@
+
+	Thanks to Travis Jeffery, the author of the original VimTwitter script
+	(vimscript #2124), who came up with the idea of running cURL from Vim
+	to access the Twitter API.
+
+	Techniques for managing the Twitter buffer were adapted from the NERD
+	Tree plugin (vimscript #1658) by Marty Grenfell.
+

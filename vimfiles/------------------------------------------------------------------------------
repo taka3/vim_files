@@ -1,0 +1,6 @@
+
+	If you have multiple user accounts on identi.ca, you can add something
+	like to following to your vimrc to make it easy to switch between
+	those accounts:
+>
+		function! Switch_to_identica_user1()

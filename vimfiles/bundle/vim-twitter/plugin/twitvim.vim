@@ -2790,9 +2790,12 @@ function! s:convert_entity(str)
     let s = substitute(s, '&gt;', '>', 'g')
     let s = substitute(s, '&quot;', '"', 'g')
     let s = substitute(s, '&apos;', "'", 'g')
+    setlocal encoding=utf-8
     " let s = substitute(s, '&#\(\d\+\);','\=nr2char(submatch(1))', 'g')
     let s = substitute(s, '&#\(\d\+\);','\=s:nr2enc_char(submatch(1))', 'g')
     let s = substitute(s, '&#x\(\x\+\);','\=s:nr2enc_char("0x".submatch(1))', 'g')
+    let s = iconv(s, Ågutf-8Åh, Ågcp932Åh)
+"    setlocal encoding=cp932
     return s
 endfunction
 
@@ -5569,6 +5572,3 @@ if !exists(":SearchTwitter")
 endif
 
 let &cpo = s:save_cpo
-finish
-
-" vim:set tw=0 et:
