@@ -20,6 +20,10 @@ call pathogen#helptags()
 " neocomplcache--------------------
 let g:neocomplcache_enable_at_startup = 1 " 起動時に有効化f
 
+" autocomplepop--------------------
+"補完候補を出したまま改行できるようにする
+"inoremap <expr> <CR> pumvisible() ? "\<C-Y>\<CR>" : "\<CR>"
+
 "ポップアップ補完メニュー色設定（通常の項目、選択されている項目、スクロールバー、スクロールバーのつまみ部分）
 highlight Pmenu ctermbg=7 ctermfg=0
 highlight PmenuSel ctermbg=6 ctermfg=0
@@ -45,7 +49,6 @@ call unite#custom_default_action('file', 'tabopen')
 nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file <CR>
 
 "Vim Twitter Setting
-"let twitvim_login_b64 = 'RknaoxN7CpbI2'
 let twitvim_count = 40
 "TwitVimのキーマップ設定
 nnoremap ,tp :<C-u>PosttoTwitter<CR>

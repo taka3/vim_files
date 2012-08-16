@@ -16,11 +16,19 @@ autocmd WinLeave * set nocursorline
 autocmd WinEnter,BufRead * set cursorline
 augroup END
 
+"ハイライト設定
 :hi clear CursorLine
 ":hi CursorLine gui=underline
 highlight CursorLine ctermbg=black guibg=#323232
 highlight Visual guibg=#777777
-
+highlight ErrorMsg guifg=red
+highlight IncSearch guibg=darkyellow
+highlight Search guibg=darkyellow
+"改行をあまり目立たないように
+hi NonText guifg=#666666
+hi SpecialKey guifg=#666666
+"対応する括弧が見づらい（Zenburn with JS）ので、見やすく。
+hi MatchParen guifg=#ffd700 guibg=#555555 gui=bold
 
 "--------------------------------------------------------------------------
 ""挿入モード時、ステータスラインの色を変更
@@ -60,6 +68,6 @@ endfunction
 ".gvimrc カラー設定
 "カラー設定した後にCursorIMを定義する方法
 if has('multi_byte_ime')
-  highlight Cursor guifg=NONE guibg=Darkyellow
+  highlight Cursor guifg=#555555 guibg=#ffd700
   highlight CursorIM guifg=NONE guibg=Purple
 endif

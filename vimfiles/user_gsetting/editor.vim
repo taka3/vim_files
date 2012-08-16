@@ -15,7 +15,10 @@ set tabstop=4
 set shiftwidth=4
 "閉じ括弧が入力されたとき、対応する括弧を表示する
 set showmatch
-
+"ペアにする括弧に、＜＞も加える
+set matchpairs+=<:>
+" 括弧を入力した際、カーソルが一瞬移動してしまう場合に設定
+set matchtime=0
 
 "setting for search function------------------------------------------------
 "ハイライトサーチを利用
